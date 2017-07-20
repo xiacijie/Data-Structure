@@ -51,6 +51,31 @@ PUBLIC void add(struct linked_list *list,ITEM i){
     list->size ++;
 }
 
+/* Append the element to the tail of the linked list*/
+PUBLIC void append(struct linked_list *list,ITEM i){
+    struct node *new_node;
+    new_node = malloc(sizeof(struct node));
+    if (new_node == NULL){
+        terminate("ERROR:cannot append the node to the linked list!");
+
+    }
+    new_node->data = i;
+
+    struct node *p = list->head;
+
+
+    if (list->head == NULL){
+        list->head = new_node;
+    }
+    else{
+        while (p->next){
+            p = p->next;
+        }
+        p->next = new_node;
+    }
+    list->size++;
+
+}
 
 
 /*Pop the last element in the list*/
@@ -162,19 +187,12 @@ PUBLIC struct linked_list *concatenate(struct linked_list *list1,struct linked_l
     return  new_list;
 }
 
-
-
-
-
-
-
-
 /* Print all the elements in the list( Only int type can be printed!)*/
 PUBLIC void print_int(const struct linked_list *list){
     struct node *p;
     p = list->head;
     for (;p;p=p->next){
-        printf("%d ",p->data);
+        printf("%d->",p->data);
     }
     printf("\n");
 }
