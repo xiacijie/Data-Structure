@@ -3,6 +3,7 @@
 //
 
 //----------------directives-----------------------------
+#include <stdbool.h>
 #ifndef C_PROGRAMMING_LINKED_LIST_H
 #define C_PROGRAMMING_LINKED_LIST_H
 
@@ -18,4 +19,7 @@ PUBLIC void print_int(const struct linked_list *list);
 PUBLIC ITEM pop(struct linked_list *list);
 PUBLIC int get_size(const struct linked_list *list);
 PUBLIC int search_index(const struct linked_list *list,ITEM to_search);
+PUBLIC void delete(struct linked_list *list,ITEM to_delete);
+PUBLIC void clear(struct linked_list *list);
+PUBLIC struct linked_list *concatenate(struct linked_list *list1,struct linked_list *list2);
 #endif //C_PROGRAMMING_LINKED_LIST_H
