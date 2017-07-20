@@ -22,4 +22,5 @@ PUBLIC int search_index(const struct linked_list *list,ITEM to_search);
 PUBLIC void delete(struct linked_list *list,ITEM to_delete);
 PUBLIC void clear(struct linked_list *list);
 PUBLIC struct linked_list *concatenate(struct linked_list *list1,struct linked_list *list2);
+PUBLIC void append(struct linked_list *list,ITEM i);
 #endif //C_PROGRAMMING_LINKED_LIST_H
