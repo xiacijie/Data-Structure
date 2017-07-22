@@ -5,8 +5,7 @@
 # include "stack.h"
 # include <stdlib.h>
 
-#define PRIVATE static
-#define PUBLIC
+
 
 
 struct stack_type{
@@ -71,7 +70,12 @@ PUBLIC ITEM pop(stack s){
     return to_return;
 }
 
-PUBLIC void print_int(stack s){
+PUBLIC ITEM peek(const stack s){
+    int current = s->top-1;
+    return s->contents[current];
+}
+
+PUBLIC void print_int(const stack s){
     int i;
     int n = s->top;
     for (i=0;i<n;i++){
