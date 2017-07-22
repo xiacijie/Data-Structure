@@ -71,6 +71,9 @@ PUBLIC ITEM pop(stack s){
 }
 
 PUBLIC ITEM peek(const stack s){
+    if (is_empty(s)){
+        terminate("Error: The stack is empty.Cannot peek!");
+    }
     int current = s->top-1;
     return s->contents[current];
 }
