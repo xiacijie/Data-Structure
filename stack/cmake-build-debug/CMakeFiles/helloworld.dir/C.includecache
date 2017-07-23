@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jack/CLionProjects/helloworld/main.c
+stdio.h
+-
+
+/home/jack/CLionProjects/helloworld/stack.c
+stdio.h
+-
+stack.h
+/home/jack/CLionProjects/helloworld/stack.h
+stdlib.h
+-
+
+/home/jack/CLionProjects/helloworld/stack.h
+stdbool.h
+-
+
