@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jack/桌面/C programming/linkded_list/linked_list.c
+stdio.h
+-
+stdlib.h
+-
+linked_list.h
+/home/jack/桌面/C programming/linkded_list/linked_list.h
+
+/home/jack/桌面/C programming/linkded_list/linked_list.h
+stdbool.h
+-
+
+/home/jack/桌面/C programming/linkded_list/main.c
+stdio.h
+-
+linked_list.h
+/home/jack/桌面/C programming/linkded_list/linked_list.h
+
