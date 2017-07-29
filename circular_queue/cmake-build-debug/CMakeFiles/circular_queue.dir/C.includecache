@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jack/桌面/C programming/circular_queue/circular_queue.c
+circular_queue.h
+/home/jack/桌面/C programming/circular_queue/circular_queue.h
+stdlib.h
+-
+stdio.h
+-
+
+/home/jack/桌面/C programming/circular_queue/circular_queue.h
+stdbool.h
+-
+
+/home/jack/桌面/C programming/circular_queue/main.c
+stdio.h
+-
+circular_queue.h
+/home/jack/桌面/C programming/circular_queue/circular_queue.h
+
